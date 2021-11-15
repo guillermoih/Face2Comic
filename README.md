@@ -8,13 +8,17 @@ Use pixel2style2pixel for generating comic images from faces photos.
 ## Content
 
 - **pixel2style2pixel**: Clone of the pSp StyleGAN project
-- **pretrained_models**: Weights of pretrained StyleGAN and IR-SE50 for use in our ID loss during pSp training.
+- **pretrained_models**: Folder for the weights of pretrained StyleGAN and IR-SE50. The IR-SE50 is used in our ID loss during pSp training.
 - **Notebook_Face2Comic**: Colab Notebook for download the original pSp repository and the comic dataset for training.
 ## Required changes
 
 You need to define the paths of your data source, in the /pixel2style2pixel/configs/paths_config.py file.
 
 Define the location of the pretrained models and both the source and target dataset.
+
+***IMPORTANT***
+
+Download the [FFHQ StyleGAN weights](https://drive.google.com/file/d/1EM87UquaoQmk17Q8d5kYIAHqu0dkYqdT/view) and [IR-SE50 Model](https://drive.google.com/file/d/1KW7bjndL3QG3sxBbZxreGHigcCCpsDgn/view) inside the /pretrained_models folder
 ## Deployment
 
 To train the model execute the following command
