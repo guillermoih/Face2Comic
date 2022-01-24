@@ -6,8 +6,8 @@ dataset_paths = {
 	'celeba_train_segmentation': '',
 	'celeba_test_segmentation': '',
 	'ffhq': '',
-    'face2comic_faces': '/content/pixel2style2pixel/Face2Comic/faces',
-    'face2comic_comics': '/content/pixel2style2pixel/Face2Comic/comics',
+    'face2comic_faces': '/content/Face2Comic/pixel2style2pixel/Face2Comic/faces',
+    'face2comic_comics': '/content/Face2Comic/pixel2style2pixel/Face2Comic/comics',
 }
 
 model_paths = {
