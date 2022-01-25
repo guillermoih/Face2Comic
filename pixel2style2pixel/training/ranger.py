@@ -143,12 +143,12 @@ class Ranger(Optimizer):
 					buffered[2] = step_size
 
 				if group['weight_decay'] != 0:
-					p_data_fp32.add_(-group['weight_decay'] * group['lr'], p_data_fp32)
+					p_data_fp32.add_(p_data_fp32, alpha=-group['weight_decay'] * group['lr'])
 
 				# apply lr
 				if N_sma > self.N_sma_threshhold:
 					denom = exp_avg_sq.sqrt().add_(group['eps'])
-					p_data_fp32.addcdiv_(-step_size * group['lr'], exp_avg, denom)
+					p_data_fp32.addcdiv_(exp_avg, denom, value=-step_size * group['lr'])
 				else:
 					p_data_fp32.add_(exp_avg, alpha=-step_size * group['lr'])
 
