@@ -52,4 +52,11 @@ DATASETS = {
 		'test_source_root': dataset_paths['face2comic_comics'],
 		'test_target_root': dataset_paths['face2comic_faces'],
 	},
+    'comic2comic': {
+		'transforms': transforms_config.SketchToImageTransforms,
+		'train_source_root': dataset_paths['face2comic_comics'],
+		'train_target_root': dataset_paths['face2comic_comics'],
+		'test_source_root': dataset_paths['face2comic_comics'],
+		'test_target_root': dataset_paths['face2comic_comics'],
+	},
 }
