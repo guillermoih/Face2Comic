@@ -11,6 +11,7 @@ dataset_paths = {
 }
 
 model_paths = {
+    'pretrained_stylegan_adapytorch': '/content/drive/MyDrive/StyleGAN2_Ada_Pytorch/saved_model.pt',
 	'stylegan_ffhq': '/content/drive/MyDrive/stylegan2-ffhq-config-f.pt',
 	'ir_se50': '/content/drive/MyDrive/model_ir_se50.pth',
 	'circular_face': 'pretrained_models/CurricularFace_Backbone.pth',
