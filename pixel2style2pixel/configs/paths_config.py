@@ -6,8 +6,8 @@ dataset_paths = {
 	'celeba_train_segmentation': '',
 	'celeba_test_segmentation': '',
 	'ffhq': '',
-    'face2comic_faces': '/content/Face2Comic/pixel2style2pixel/Face2Comic/faces',
-    'face2comic_comics': '/content/Face2Comic/pixel2style2pixel/Face2Comic/comics',
+    'face2comic_faces': '/content/drive/MyDrive/Dataset/Simpsons/1x1/FONDO_BLANCO/512x512/REALES',
+    'face2comic_comics': '/content/drive/MyDrive/Dataset/Simpsons/1x1/FONDO_BLANCO/512x512/CARICATURAS',
 }
 
 model_paths = {
@@ -19,5 +19,5 @@ model_paths = {
 	'mtcnn_rnet': 'pretrained_models/mtcnn/rnet.npy',
 	'mtcnn_onet': 'pretrained_models/mtcnn/onet.npy',
 	'shape_predictor': 'shape_predictor_68_face_landmarks.dat',
-	'moco': 'pretrained_models/moco_v2_800ep_pretrain.pth.tar'
+	'moco': '/content/drive/MyDrive/Pixel2Style2Pixel/moco_v2_800ep_pretrain.pt',
 }
